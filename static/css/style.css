@@ -240,6 +240,22 @@ ul { list-style: none; }
 
 .btn--full { width: 100%; justify-content: center; }
 
+.btn--success {
+    background: linear-gradient(135deg, #10b981, #059669);
+    box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
+}
+
+.btn--error {
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+    box-shadow: 0 4px 15px rgba(239, 68, 68, 0.3);
+}
+
+.btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    transform: none;
+}
+
 /* ========================================
    Section Titles
    ======================================== */

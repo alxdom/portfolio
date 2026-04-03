@@ -289,15 +289,15 @@
             <div class="contact__wrapper">
                 <form class="contact__form" id="contactForm">
                     <div class="form-group">
-                        <input type="text" id="name" required placeholder=" ">
+                        <input type="text" id="name" name="from_name" required placeholder=" ">
                         <label for="name" data-i18n="contact.name">Nombre</label>
                     </div>
                     <div class="form-group">
-                        <input type="email" id="email" required placeholder=" ">
+                        <input type="email" id="email" name="from_email" required placeholder=" ">
                         <label for="email" data-i18n="contact.email">Email</label>
                     </div>
                     <div class="form-group">
-                        <textarea id="message" rows="4" required placeholder=" "></textarea>
+                        <textarea id="message" name="message" rows="4" required placeholder=" "></textarea>
                         <label for="message" data-i18n="contact.message">Cuéntame sobre tu proyecto</label>
                     </div>
                     <button type="submit" class="btn btn--primary btn--full" data-i18n="contact.send">Enviar mensaje</button>
@@ -335,6 +335,7 @@
         </p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="/static/js/main.js"></script>

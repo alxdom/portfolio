@@ -292,15 +292,44 @@ function initSmoothScroll() {
    Contact Form
    ======================================== */
 function initContactForm() {
+    emailjs.init('HSB3duwxsKl9MOkMh');
+
     const form = document.getElementById('contactForm');
+    const btn = form.querySelector('button[type="submit"]');
+
+    const messages = {
+        es: { sending: 'Enviando...', success: 'Mensaje enviado!', error: 'Error al enviar. Intenta de nuevo.' },
+        en: { sending: 'Sending...', success: 'Message sent!', error: 'Failed to send. Try again.' }
+    };
+
     form.addEventListener('submit', e => {
         e.preventDefault();
-        const name = document.getElementById('name').value;
-        const email = document.getElementById('email').value;
-        const message = document.getElementById('message').value;
-        const subject = encodeURIComponent(`Portfolio Contact from ${name}`);
-        const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
-        window.location.href = `mailto:alexmoreno.am455@gmail.com?subject=${subject}&body=${body}`;
+        const msg = messages[i18n.currentLang] || messages.es;
+        const originalText = btn.textContent;
+
+        btn.textContent = msg.sending;
+        btn.disabled = true;
+
+        emailjs.sendForm('service_9xm4w19', 'template_ysfzoxm', form)
+            .then(() => {
+                btn.textContent = msg.success;
+                btn.classList.add('btn--success');
+                form.reset();
+                setTimeout(() => {
+                    btn.textContent = originalText;
+                    btn.classList.remove('btn--success');
+                    btn.disabled = false;
+                }, 3000);
+            })
+            .catch(() => {
+                btn.textContent = msg.error;
+                btn.classList.add('btn--error');
+                setTimeout(() => {
+                    btn.textContent = originalText;
+                    btn.classList.remove('btn--error');
+                    btn.disabled = false;
+                }, 3000);
+            });
     });
 }
 
