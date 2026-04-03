@@ -1,0 +1,76 @@
+{
+  "nav.story": "Mi Historia",
+  "nav.services": "Servicios",
+  "nav.impact": "Impacto",
+  "nav.stack": "Tech Stack",
+  "nav.contact": "Contacto",
+
+  "hero.greeting": "Hola, soy",
+  "hero.name": "Alejandro Dorado",
+  "hero.title": "Tech Lead & Transformaci\u00f3n Digital",
+  "hero.subtitle": "Convierto procesos manuales en ecosistemas digitales inteligentes. De c\u00f3digo que funciona a sistemas que transforman negocios.",
+  "hero.cta": "Conoce mi historia",
+  "hero.cta2": "Hablemos",
+
+  "story.title": "Mi Historia",
+  "story.intro": "Un camino de evoluci\u00f3n constante: de escribir mis primeras l\u00edneas de c\u00f3digo a liderar la transformaci\u00f3n digital de un grupo corporativo.",
+
+  "story.2020.year": "2020",
+  "story.2020.role": "Backend Developer",
+  "story.2020.company": "Centro Universitario de los Valles",
+  "story.2020.desc": "Mi punto de partida. Desarroll\u00e9 plataformas web con PHP/Laravel para gesti\u00f3n masiva de datos estudiantiles. Aqu\u00ed descubr\u00ed que el c\u00f3digo m\u00e1s valioso es el que resuelve problemas reales.",
+
+  "story.2021.year": "2021",
+  "story.2021.role": "Tech Lead / Full Stack Developer",
+  "story.2021.company": "UxbiLink",
+  "story.2021.desc": "Di el salto a construir un ERP propietario B2B. Me sumergi en entender las operaciones reales de las empresas para traducir sus procesos f\u00edsicos en APIs escalables y flujos de software eficientes.",
+
+  "story.2023.year": "2023",
+  "story.2023.role": "Tech Lead / L\u00edder de Transformaci\u00f3n Digital",
+  "story.2023.company": "Emakers Group",
+  "story.2023.desc": "Evolucionar de developer a l\u00edder de tecnolog\u00eda. Lider\u00e9 la digitalizaci\u00f3n completa: de procesos en papel a un ecosistema 100% digital con Odoo ERP, integraciones e-commerce, y agentes de IA.",
+
+  "services.title": "Lo que hago",
+  "services.subtitle": "Tres pilares de servicio construidos sobre a\u00f1os de experiencia real en el campo.",
+
+  "services.erp.title": "Consultor\u00eda Digital & ERP",
+  "services.erp.desc": "Auditor\u00eda de procesos operativos, implementaci\u00f3n y customizaci\u00f3n de Odoo (v14\u2013v18), y dise\u00f1o de estrategias de digitalizaci\u00f3n end-to-end.",
+  "services.erp.items": "Implementaci\u00f3n Odoo|Auditor\u00eda de procesos|Digitalizaci\u00f3n operativa|Migraci\u00f3n de datos",
+
+  "services.dev.title": "Desarrollo & Integraciones",
+  "services.dev.desc": "Arquitectura backend, APIs RESTful, integraci\u00f3n con marketplaces (Shopify, Amazon, MercadoLibre) y automatizaci\u00f3n de workflows.",
+  "services.dev.items": "APIs & Microservicios|Integraci\u00f3n E-commerce|Webhooks & Conectores|Arquitectura escalable",
+
+  "services.ai.title": "AI & Automatizaci\u00f3n",
+  "services.ai.desc": "Agentes inteligentes con Tool Calling, arquitectura RAG para empresas, chatbots, y orquestaci\u00f3n RPA con Make, Zapier y Python.",
+  "services.ai.items": "Agentes IA / Tool Calling|Arquitectura RAG|Chatbots inteligentes|RPA & Workflows",
+
+  "impact.title": "Impacto en N\u00fameros",
+  "impact.subtitle": "Resultados medibles de proyectos reales.",
+  "impact.stat1.value": "90",
+  "impact.stat1.suffix": "%",
+  "impact.stat1.label": "Reducci\u00f3n de errores manuales en workflows de ventas",
+  "impact.stat2.value": "70",
+  "impact.stat2.suffix": "%",
+  "impact.stat2.label": "Tickets de soporte resueltos por agente de IA 24/7",
+  "impact.stat3.value": "100",
+  "impact.stat3.suffix": "%",
+  "impact.stat3.label": "Digitalizaci\u00f3n de inventario f\u00edsico en ERP",
+  "impact.stat4.value": "6",
+  "impact.stat4.suffix": "+",
+  "impact.stat4.label": "Marketplaces integrados bidireccionalmente",
+
+  "stack.title": "Tech Stack",
+
+  "contact.title": "Hablemos",
+  "contact.subtitle": "Si tienes un reto de transformaci\u00f3n digital o necesitas elevar tus operaciones con tecnolog\u00eda, estoy listo para ayudarte.",
+  "contact.name": "Nombre",
+  "contact.email": "Email",
+  "contact.message": "Cu\u00e9ntame sobre tu proyecto",
+  "contact.send": "Enviar mensaje",
+  "contact.or": "O escr\u00edbeme directamente:",
+
+  "footer.made": "Construido con",
+  "footer.and": "y",
+  "footer.by": "por Alejandro Dorado"
+}

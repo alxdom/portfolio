@@ -1,0 +1,76 @@
+{
+  "nav.story": "My Story",
+  "nav.services": "Services",
+  "nav.impact": "Impact",
+  "nav.stack": "Tech Stack",
+  "nav.contact": "Contact",
+
+  "hero.greeting": "Hi, I'm",
+  "hero.name": "Alejandro Dorado",
+  "hero.title": "Tech Lead & Digital Transformation",
+  "hero.subtitle": "I turn manual processes into intelligent digital ecosystems. From code that works to systems that transform businesses.",
+  "hero.cta": "Discover my story",
+  "hero.cta2": "Let's talk",
+
+  "story.title": "My Story",
+  "story.intro": "A path of constant evolution: from writing my first lines of code to leading the digital transformation of a corporate group.",
+
+  "story.2020.year": "2020",
+  "story.2020.role": "Backend Developer",
+  "story.2020.company": "Centro Universitario de los Valles",
+  "story.2020.desc": "My starting point. I built web platforms with PHP/Laravel for massive student data management. Here I discovered that the most valuable code is the one that solves real problems.",
+
+  "story.2021.year": "2021",
+  "story.2021.role": "Tech Lead / Full Stack Developer",
+  "story.2021.company": "UxbiLink",
+  "story.2021.desc": "I took the leap to build a proprietary B2B ERP. I immersed myself in understanding the real operations of companies to translate their physical processes into scalable APIs and efficient software flows.",
+
+  "story.2023.year": "2023",
+  "story.2023.role": "Tech Lead / Digital Transformation Leader",
+  "story.2023.company": "Emakers Group",
+  "story.2023.desc": "Evolving from developer to technology leader. I led the complete digitalization: from paper-based processes to a 100% digital ecosystem with Odoo ERP, e-commerce integrations, and AI agents.",
+
+  "services.title": "What I Do",
+  "services.subtitle": "Three service pillars built on years of real-world experience.",
+
+  "services.erp.title": "Digital & ERP Consulting",
+  "services.erp.desc": "Operational process auditing, Odoo implementation and customization (v14\u2013v18), and end-to-end digitalization strategy design.",
+  "services.erp.items": "Odoo Implementation|Process Auditing|Operational Digitalization|Data Migration",
+
+  "services.dev.title": "Development & Integrations",
+  "services.dev.desc": "Backend architecture, RESTful APIs, marketplace integration (Shopify, Amazon, MercadoLibre) and workflow automation.",
+  "services.dev.items": "APIs & Microservices|E-commerce Integration|Webhooks & Connectors|Scalable Architecture",
+
+  "services.ai.title": "AI & Automation",
+  "services.ai.desc": "Intelligent agents with Tool Calling, enterprise RAG architecture, chatbots, and RPA orchestration with Make, Zapier and Python.",
+  "services.ai.items": "AI Agents / Tool Calling|RAG Architecture|Intelligent Chatbots|RPA & Workflows",
+
+  "impact.title": "Impact in Numbers",
+  "impact.subtitle": "Measurable results from real projects.",
+  "impact.stat1.value": "90",
+  "impact.stat1.suffix": "%",
+  "impact.stat1.label": "Reduction in manual errors in sales workflows",
+  "impact.stat2.value": "70",
+  "impact.stat2.suffix": "%",
+  "impact.stat2.label": "Support tickets resolved by 24/7 AI agent",
+  "impact.stat3.value": "100",
+  "impact.stat3.suffix": "%",
+  "impact.stat3.label": "Physical inventory digitalized into ERP",
+  "impact.stat4.value": "6",
+  "impact.stat4.suffix": "+",
+  "impact.stat4.label": "Marketplaces bidirectionally integrated",
+
+  "stack.title": "Tech Stack",
+
+  "contact.title": "Let's Talk",
+  "contact.subtitle": "If you have a digital transformation challenge or need to elevate your operations with technology, I'm ready to help.",
+  "contact.name": "Name",
+  "contact.email": "Email",
+  "contact.message": "Tell me about your project",
+  "contact.send": "Send message",
+  "contact.or": "Or write me directly:",
+
+  "footer.made": "Built with",
+  "footer.and": "and",
+  "footer.by": "by Alejandro Dorado"
+}

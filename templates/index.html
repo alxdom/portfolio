@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alejandro Dorado Moreno | Tech Lead & Digital Transformation</title>
+    <meta name="description" content="Software Engineer specializing in Digital Transformation, ERP systems, AI agents, and enterprise automation.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav__logo">
+            <span class="nav__logo-bracket">{</span> AD <span class="nav__logo-bracket">}</span>
+        </div>
+        <div class="nav__links">
+            <a href="#story" data-i18n="nav.story">Mi Historia</a>
+            <a href="#services" data-i18n="nav.services">Servicios</a>
+            <a href="#impact" data-i18n="nav.impact">Impacto</a>
+            <a href="#stack" data-i18n="nav.stack">Tech Stack</a>
+            <a href="#contact" data-i18n="nav.contact">Contacto</a>
+        </div>
+        <div class="nav__actions">
+            <button class="lang-toggle" id="langToggle" aria-label="Toggle language">
+                <span class="lang-toggle__flag" id="langFlag">EN</span>
+            </button>
+            <button class="nav__menu-btn" id="menuBtn" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#story" data-i18n="nav.story">Mi Historia</a>
+        <a href="#services" data-i18n="nav.services">Servicios</a>
+        <a href="#impact" data-i18n="nav.impact">Impacto</a>
+        <a href="#stack" data-i18n="nav.stack">Tech Stack</a>
+        <a href="#contact" data-i18n="nav.contact">Contacto</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero__particles" id="particles"></div>
+        <div class="hero__content">
+            <p class="hero__greeting" data-i18n="hero.greeting">Hola, soy</p>
+            <h1 class="hero__name" data-i18n="hero.name">Alejandro Dorado</h1>
+            <div class="hero__typing">
+                <span class="hero__typing-text" id="typingText"></span>
+                <span class="hero__cursor">|</span>
+            </div>
+            <p class="hero__subtitle" data-i18n="hero.subtitle">Convierto procesos manuales en ecosistemas digitales inteligentes. De código que funciona a sistemas que transforman negocios.</p>
+            <div class="hero__ctas">
+                <a href="#story" class="btn btn--primary" data-i18n="hero.cta">Conoce mi historia</a>
+                <a href="#contact" class="btn btn--outline" data-i18n="hero.cta2">Hablemos</a>
+            </div>
+        </div>
+        <div class="hero__code">
+            <div class="code-window">
+                <div class="code-window__dots">
+                    <span></span><span></span><span></span>
+                </div>
+                <pre class="code-window__content"><code><span class="code-kw">class</span> <span class="code-cls">DigitalTransformer</span>:
+    <span class="code-kw">def</span> <span class="code-fn">__init__</span>(self):
+        self.skills = [<span class="code-str">"Python"</span>, <span class="code-str">"ERP"</span>, <span class="code-str">"AI"</span>]
+        self.passion = <span class="code-str">"solving real problems"</span>
+
+    <span class="code-kw">def</span> <span class="code-fn">transform</span>(self, business):
+        process = self.audit(business.operations)
+        digital = self.architect(process)
+        <span class="code-kw">return</span> digital.deploy() <span class="code-cmt"># ship it</span></code></pre>
+            </div>
+        </div>
+        <div class="hero__scroll-indicator">
+            <div class="hero__scroll-mouse">
+                <div class="hero__scroll-wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Story / Timeline Section -->
+    <section class="story" id="story">
+        <div class="container">
+            <h2 class="section-title" data-i18n="story.title">Mi Historia</h2>
+            <p class="section-subtitle" data-i18n="story.intro">Un camino de evolución constante: de escribir mis primeras líneas de código a liderar la transformación digital de un grupo corporativo.</p>
+
+            <div class="timeline">
+                <!-- 2020 -->
+                <div class="timeline__item" data-year="2020">
+                    <div class="timeline__marker">
+                        <div class="timeline__dot"></div>
+                    </div>
+                    <div class="timeline__card">
+                        <span class="timeline__year" data-i18n="story.2020.year">2020</span>
+                        <h3 class="timeline__role" data-i18n="story.2020.role">Backend Developer</h3>
+                        <p class="timeline__company" data-i18n="story.2020.company">Centro Universitario de los Valles</p>
+                        <p class="timeline__desc" data-i18n="story.2020.desc">Mi punto de partida. Desarrollé plataformas web con PHP/Laravel para gestión masiva de datos estudiantiles. Aquí descubrí que el código más valioso es el que resuelve problemas reales.</p>
+                        <div class="timeline__tags">
+                            <span>PHP</span><span>Laravel</span><span>MySQL</span><span>REST/SOAP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2021 -->
+                <div class="timeline__item" data-year="2021">
+                    <div class="timeline__marker">
+                        <div class="timeline__dot"></div>
+                    </div>
+                    <div class="timeline__card">
+                        <span class="timeline__year" data-i18n="story.2021.year">2021</span>
+                        <h3 class="timeline__role" data-i18n="story.2021.role">Tech Lead / Full Stack Developer</h3>
+                        <p class="timeline__company" data-i18n="story.2021.company">UxbiLink</p>
+                        <p class="timeline__desc" data-i18n="story.2021.desc">Di el salto a construir un ERP propietario B2B. Me sumergí en entender las operaciones reales de las empresas para traducir sus procesos físicos en APIs escalables y flujos de software eficientes.</p>
+                        <div class="timeline__tags">
+                            <span>PHP/Laravel</span><span>JavaScript</span><span>REST APIs</span><span>Webhooks</span><span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2023 -->
+                <div class="timeline__item" data-year="2023">
+                    <div class="timeline__marker">
+                        <div class="timeline__dot"></div>
+                    </div>
+                    <div class="timeline__card">
+                        <span class="timeline__year" data-i18n="story.2023.year">2023</span>
+                        <h3 class="timeline__role" data-i18n="story.2023.role">Tech Lead / Líder de Transformación Digital</h3>
+                        <p class="timeline__company" data-i18n="story.2023.company">Emakers Group</p>
+                        <p class="timeline__desc" data-i18n="story.2023.desc">Evolucionar de developer a líder de tecnología. Lideré la digitalización completa: de procesos en papel a un ecosistema 100% digital con Odoo ERP, integraciones e-commerce, y agentes de IA.</p>
+                        <div class="timeline__tags">
+                            <span>Python</span><span>Odoo ERP</span><span>AI/LLMs</span><span>RAG</span><span>RPA</span><span>E-commerce</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title" data-i18n="services.title">Lo que hago</h2>
+            <p class="section-subtitle" data-i18n="services.subtitle">Tres pilares de servicio construidos sobre años de experiencia real en el campo.</p>
+
+            <div class="services__grid">
+                <!-- ERP Consulting -->
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M9 17H5a2 2 0 01-2-2V5a2 2 0 012-2h14a2 2 0 012 2v10a2 2 0 01-2 2h-4m-6 0v4m0-4h6m-6 4h6m-3-4v4"/>
+                            <path d="M8 9h2m4 0h2M8 13h8"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title" data-i18n="services.erp.title">Consultoría Digital & ERP</h3>
+                    <p class="service-card__desc" data-i18n="services.erp.desc">Auditoría de procesos operativos, implementación y customización de Odoo (v14–v18), y diseño de estrategias de digitalización end-to-end.</p>
+                    <ul class="service-card__items" data-i18n-list="services.erp.items">
+                        <li>Implementación Odoo</li>
+                        <li>Auditoría de procesos</li>
+                        <li>Digitalización operativa</li>
+                        <li>Migración de datos</li>
+                    </ul>
+                </div>
+
+                <!-- Development -->
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M8 9l3 3-3 3m5 0h3"/>
+                            <rect x="2" y="3" width="20" height="18" rx="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title" data-i18n="services.dev.title">Desarrollo & Integraciones</h3>
+                    <p class="service-card__desc" data-i18n="services.dev.desc">Arquitectura backend, APIs RESTful, integración con marketplaces (Shopify, Amazon, MercadoLibre) y automatización de workflows.</p>
+                    <ul class="service-card__items" data-i18n-list="services.dev.items">
+                        <li>APIs & Microservicios</li>
+                        <li>Integración E-commerce</li>
+                        <li>Webhooks & Conectores</li>
+                        <li>Arquitectura escalable</li>
+                    </ul>
+                </div>
+
+                <!-- AI -->
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2a4 4 0 014 4v1a1 1 0 001 1h1a4 4 0 010 8h-1a1 1 0 00-1 1v1a4 4 0 01-8 0v-1a1 1 0 00-1-1H6a4 4 0 010-8h1a1 1 0 001-1V6a4 4 0 014-4z"/>
+                            <circle cx="9" cy="12" r="1"/><circle cx="15" cy="12" r="1"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title" data-i18n="services.ai.title">AI & Automatización</h3>
+                    <p class="service-card__desc" data-i18n="services.ai.desc">Agentes inteligentes con Tool Calling, arquitectura RAG para empresas, chatbots, y orquestación RPA con Make, Zapier y Python.</p>
+                    <ul class="service-card__items" data-i18n-list="services.ai.items">
+                        <li>Agentes IA / Tool Calling</li>
+                        <li>Arquitectura RAG</li>
+                        <li>Chatbots inteligentes</li>
+                        <li>RPA & Workflows</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section class="impact" id="impact">
+        <div class="container">
+            <h2 class="section-title" data-i18n="impact.title">Impacto en Números</h2>
+            <p class="section-subtitle" data-i18n="impact.subtitle">Resultados medibles de proyectos reales.</p>
+
+            <div class="impact__grid">
+                <div class="impact__stat" data-target="90" data-suffix="%">
+                    <span class="impact__number">0</span><span class="impact__suffix">%</span>
+                    <p class="impact__label" data-i18n="impact.stat1.label">Reducción de errores manuales en workflows de ventas</p>
+                </div>
+                <div class="impact__stat" data-target="70" data-suffix="%">
+                    <span class="impact__number">0</span><span class="impact__suffix">%</span>
+                    <p class="impact__label" data-i18n="impact.stat2.label">Tickets de soporte resueltos por agente de IA 24/7</p>
+                </div>
+                <div class="impact__stat" data-target="100" data-suffix="%">
+                    <span class="impact__number">0</span><span class="impact__suffix">%</span>
+                    <p class="impact__label" data-i18n="impact.stat3.label">Digitalización de inventario físico en ERP</p>
+                </div>
+                <div class="impact__stat" data-target="6" data-suffix="+">
+                    <span class="impact__number">0</span><span class="impact__suffix">+</span>
+                    <p class="impact__label" data-i18n="impact.stat4.label">Marketplaces integrados bidireccionalmente</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section class="stack" id="stack">
+        <div class="container">
+            <h2 class="section-title" data-i18n="stack.title">Tech Stack</h2>
+
+            <div class="stack__grid">
+                <div class="stack__category">
+                    <h3>Backend & Languages</h3>
+                    <div class="stack__items">
+                        <div class="stack__item"><span class="stack__icon">Py</span>Python</div>
+                        <div class="stack__item"><span class="stack__icon">Ph</span>PHP</div>
+                        <div class="stack__item"><span class="stack__icon">Lv</span>Laravel</div>
+                        <div class="stack__item"><span class="stack__icon">Fa</span>FastAPI</div>
+                        <div class="stack__item"><span class="stack__icon">Js</span>JavaScript</div>
+                    </div>
+                </div>
+                <div class="stack__category">
+                    <h3>ERP & E-commerce</h3>
+                    <div class="stack__items">
+                        <div class="stack__item"><span class="stack__icon">Od</span>Odoo</div>
+                        <div class="stack__item"><span class="stack__icon">Sh</span>Shopify</div>
+                        <div class="stack__item"><span class="stack__icon">Az</span>Amazon</div>
+                        <div class="stack__item"><span class="stack__icon">Ml</span>MercadoLibre</div>
+                        <div class="stack__item"><span class="stack__icon">Tk</span>TikTok Shop</div>
+                    </div>
+                </div>
+                <div class="stack__category">
+                    <h3>Data & Infrastructure</h3>
+                    <div class="stack__items">
+                        <div class="stack__item"><span class="stack__icon">Pg</span>PostgreSQL</div>
+                        <div class="stack__item"><span class="stack__icon">My</span>MySQL</div>
+                        <div class="stack__item"><span class="stack__icon">Gt</span>Git</div>
+                        <div class="stack__item"><span class="stack__icon">Dk</span>Docker</div>
+                        <div class="stack__item"><span class="stack__icon">Ln</span>Linux</div>
+                    </div>
+                </div>
+                <div class="stack__category">
+                    <h3>AI & Automation</h3>
+                    <div class="stack__items">
+                        <div class="stack__item"><span class="stack__icon">Gp</span>ChatGPT</div>
+                        <div class="stack__item"><span class="stack__icon">Cl</span>Claude</div>
+                        <div class="stack__item"><span class="stack__icon">Mk</span>Make</div>
+                        <div class="stack__item"><span class="stack__icon">Zp</span>Zapier</div>
+                        <div class="stack__item"><span class="stack__icon">Rb</span>Rocketbot</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title" data-i18n="contact.title">Hablemos</h2>
+            <p class="section-subtitle" data-i18n="contact.subtitle">Si tienes un reto de transformación digital o necesitas elevar tus operaciones con tecnología, estoy listo para ayudarte.</p>
+
+            <div class="contact__wrapper">
+                <form class="contact__form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" required placeholder=" ">
+                        <label for="name" data-i18n="contact.name">Nombre</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" required placeholder=" ">
+                        <label for="email" data-i18n="contact.email">Email</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="4" required placeholder=" "></textarea>
+                        <label for="message" data-i18n="contact.message">Cuéntame sobre tu proyecto</label>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full" data-i18n="contact.send">Enviar mensaje</button>
+                </form>
+
+                <div class="contact__info">
+                    <p class="contact__or" data-i18n="contact.or">O escríbeme directamente:</p>
+                    <div class="contact__links">
+                        <a href="mailto:alexmoreno.am455@gmail.com" class="contact__link">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13 2 4"/></svg>
+                            alexmoreno.am455@gmail.com
+                        </a>
+                        <a href="https://linkedin.com/in/alejandro-dorado-moreno" target="_blank" class="contact__link">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                            LinkedIn
+                        </a>
+                        <a href="tel:+523321056487" class="contact__link">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.362 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                            +52 33 2105 6487
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>
+            <span data-i18n="footer.made">Construido con</span>
+            <span class="footer__tech">FastAPI</span>
+            <span data-i18n="footer.and">y</span>
+            <span class="footer__tech">Python</span>
+            <span data-i18n="footer.by">por Alejandro Dorado</span>
+        </p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="/static/js/main.js"></script>
+</body>
+</html>
