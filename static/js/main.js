@@ -7,7 +7,7 @@ const i18n = {
 
     async load(lang) {
         if (this.translations[lang]) return this.translations[lang];
-        const res = await fetch(`/static/i18n/${lang}.json`);
+        const res = await fetch(`static/i18n/${lang}.json`);
         this.translations[lang] = await res.json();
         return this.translations[lang];
     },
