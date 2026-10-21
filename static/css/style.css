@@ -950,6 +950,259 @@ ul { list-style: none; }
 }
 
 /* ========================================
+   Hero Card (business summary)
+   ======================================== */
+.hero-card {
+    padding: 24px 28px 28px;
+}
+
+.hero-card__title {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+.hero-card__list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.hero-card__list li,
+.compare__col li {
+    position: relative;
+    padding-left: 30px;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.hero-card__list li::before,
+.compare__col--after li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    top: 1px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: rgba(40, 201, 64, 0.15);
+    color: #28c940;
+    font-size: 0.75rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ========================================
+   What is Odoo
+   ======================================== */
+.odoo {
+    padding: 120px 0;
+}
+
+.odoo__example,
+.odoo__implement {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 28px 32px;
+    border-radius: 16px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent-1);
+}
+
+.odoo__example h3,
+.odoo__implement h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.odoo__example p,
+.odoo__implement p {
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
+.compare {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin: 40px auto;
+    max-width: 900px;
+}
+
+.compare__col {
+    padding: 28px;
+    border-radius: 16px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+}
+
+.compare__col h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+.compare__col ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.compare__col--before h3 { color: #ff8a80; }
+.compare__col--after { border-color: rgba(40, 201, 64, 0.3); }
+.compare__col--after h3 { color: #5be37a; }
+
+.compare__col--before li::before {
+    content: '✕';
+    position: absolute;
+    left: 0;
+    top: 1px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: rgba(255, 95, 87, 0.15);
+    color: #ff5f57;
+    font-size: 0.7rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ========================================
+   Audience
+   ======================================== */
+.audience {
+    padding: 120px 0;
+    background: var(--bg-secondary);
+}
+
+.audience__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.audience .service-card__desc { font-size: 0.95rem; }
+.audience .service-card__items li { font-size: 0.9rem; }
+
+/* ========================================
+   Process
+   ======================================== */
+.process {
+    padding: 120px 0;
+    background: var(--bg-secondary);
+}
+
+.process__steps {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.process__step {
+    padding: 28px 22px;
+    border-radius: 16px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    transition: border-color var(--transition);
+}
+
+.process__step:hover { border-color: var(--accent-1); }
+
+.process__num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--gradient);
+    color: white;
+    font-family: var(--font-mono);
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.process__step h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.process__step p {
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+    line-height: 1.6;
+}
+
+/* ========================================
+   FAQ
+   ======================================== */
+.faq {
+    padding: 120px 0;
+    background: var(--bg-secondary);
+}
+
+.faq__list {
+    max-width: 760px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.faq__item {
+    border-radius: 12px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    transition: border-color var(--transition);
+}
+
+.faq__item[open] { border-color: var(--accent-1); }
+
+.faq__item summary {
+    cursor: pointer;
+    list-style: none;
+    padding: 20px 56px 20px 24px;
+    font-weight: 500;
+    position: relative;
+}
+
+.faq__item summary::-webkit-details-marker { display: none; }
+
+.faq__item summary::after {
+    content: '+';
+    position: absolute;
+    right: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.4rem;
+    color: var(--accent-3);
+    transition: transform var(--transition);
+}
+
+.faq__item[open] summary::after { transform: translateY(-50%) rotate(45deg); }
+
+.faq__item p {
+    padding: 0 24px 22px;
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
+/* Alternate section backgrounds in page order */
+.odoo, .services, .impact, .stack, .contact { background: var(--bg-primary); }
+.audience, .process, .story, .faq { background: var(--bg-secondary); }
+
+/* ========================================
    Responsive
    ======================================== */
 @media (max-width: 1024px) {
@@ -966,6 +1219,12 @@ ul { list-style: none; }
     .services__grid { grid-template-columns: 1fr; max-width: 500px; margin: 0 auto; }
     .impact__grid { grid-template-columns: repeat(2, 1fr); }
     .contact__wrapper { grid-template-columns: 1fr; }
+    .process__steps { grid-template-columns: repeat(2, 1fr); }
+    .hero-card { text-align: left; }
+
+    .nav__links { display: none; }
+    .nav__menu-btn { display: flex; }
+    .mobile-menu { display: flex; }
 }
 
 @media (max-width: 768px) {
@@ -976,7 +1235,11 @@ ul { list-style: none; }
     .hero { padding: 120px 20px 60px; gap: 40px; }
     .hero__name { font-size: 2.5rem; }
 
-    .story, .services, .impact, .stack, .contact { padding: 80px 0; }
+    .story, .services, .impact, .stack, .contact,
+    .odoo, .audience, .process, .faq { padding: 80px 0; }
+
+    .compare, .audience__grid, .process__steps { grid-template-columns: 1fr; }
+    .odoo__example, .odoo__implement { padding: 22px 20px; }
 
     .timeline::before { left: 16px; }
     .timeline__item { padding-left: 56px; }
@@ -992,4 +1255,6 @@ ul { list-style: none; }
     .impact__grid { grid-template-columns: 1fr; }
     .hero__ctas { flex-direction: column; align-items: center; }
     .hero__code { display: none; }
+    .faq__item summary { padding: 18px 48px 18px 18px; }
+    .faq__item p { padding: 0 18px 18px; }
 }

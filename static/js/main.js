@@ -77,12 +77,21 @@ function initNav() {
    ======================================== */
 function initTyping() {
     const el = document.getElementById('typingText');
-    const phrases = [
-        'Tech Lead & Digital Transformation',
-        'Python / ERP / AI Specialist',
-        'Building systems that transform businesses',
-        'def solve(real_problems): ...'
-    ];
+    const phrasesByLang = {
+        es: [
+            'Implementación de Odoo para tu negocio',
+            'Menos papeleo, más tiempo para vender',
+            'Del cuaderno y el Excel a un sistema real',
+            'Para micro, pequeñas y grandes empresas'
+        ],
+        en: [
+            'Odoo implementation for your business',
+            'Less paperwork, more time to sell',
+            'From notebooks and spreadsheets to a real system',
+            'For micro, small and large businesses'
+        ]
+    };
+    let phrases = phrasesByLang[i18n.currentLang];
     let phraseIdx = 0;
     let charIdx = 0;
     let deleting = false;
@@ -105,6 +114,7 @@ function initTyping() {
             charIdx--;
             if (charIdx === 0) {
                 deleting = false;
+                phrases = phrasesByLang[i18n.currentLang] || phrasesByLang.es;
                 phraseIdx = (phraseIdx + 1) % phrases.length;
                 pauseTime = 400;
             } else {
@@ -229,6 +239,21 @@ function initAnimations() {
                 toggleActions: 'play none none none'
             },
             delay: i * 0.12
+        });
+    });
+
+    // Generic reveal blocks (Odoo explainer, process steps, FAQ)
+    document.querySelectorAll('.reveal').forEach(el => {
+        gsap.from(el, {
+            opacity: 0,
+            y: 30,
+            duration: 0.6,
+            ease: 'power2.out',
+            scrollTrigger: {
+                trigger: el,
+                start: 'top 88%',
+                toggleActions: 'play none none none'
+            }
         });
     });
 
